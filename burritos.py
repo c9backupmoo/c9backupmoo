@@ -26,10 +26,15 @@ if response in yesList:
 
 if response in noList:
     print(foods + "."' that sounds good. How '+ x + ' ' + foods + ' will you have?')
+#convert to upper case at the beginning of the string and after the periods
 
 number=int(input())
+response=str(input())
 
 if number > 5:
     print('Slow down piggy, leave some for the rest of us')
+
+if input()==response:
+    print(response + "That's the way to do it.")
 
 # add comments based on int(input)
