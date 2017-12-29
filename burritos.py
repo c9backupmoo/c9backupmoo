@@ -1,3 +1,4 @@
+#change to include proper cases for punctuation.
 print('Did you eat lunch today?')
 
 response=input().lower()
