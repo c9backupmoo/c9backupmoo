@@ -29,17 +29,22 @@ if response in noList:
     print(foods + "."' that sounds good. How '+ x + ' ' + foods + ' will you have?')
 #convert to upper case at the beginning of the string and after the periods
 
-number=int(input())
+try:
 
-if number < 5:
-    print('Are you on a diet?')
-
-if (number >= 5) and (number <= 19):
-    print('Slow down piggy, leave some for the rest of us')
-
-if number > 20:
-    print(str(number) + '! Are you training for an eating contest?')
+    number=int(input())
 
 
+    if number < 5:
+        print('Are you on a diet?')
+
+    if (number >= 5) and (number <= 19):
+        print('Slow down piggy, leave some for the rest of us')
+
+    if number > 20:
+        print(str(number) + '! Are you training for an eating contest?')
+
+except ValueError:
+    response=str(input())
+    print(response + '. Good job!')
 
 # add contingencies for string responses
