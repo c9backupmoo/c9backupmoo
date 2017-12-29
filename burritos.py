@@ -1,6 +1,6 @@
 print('Did you eat lunch today?')
 
-response=input()
+response=input().lower()
 
 yesList=['y','yes', 'yeah' , 'ya', 'yup', 'yes i did']
 noList=['n', 'no', 'naw', 'nah', 'nope', "no i didn't", 'no i did not']
@@ -27,13 +27,18 @@ if response in yesList:
 if response in noList:
     print(foods + "."' that sounds good. How '+ x + ' ' + foods + ' will you have?')
 #convert to upper case at the beginning of the string and after the periods
-try:
-    number=int(input())
 
-    if number > 5:
-        print('Slow down piggy, leave some for the rest of us')
+number=int(input())
 
-except:ValueError
-    print(response + "That's the way to do it.")
+if number < 5:
+    print('Are you on a diet?')
 
-# add comments based on int(input)
+if (number >= 5) and (number <= 19):
+    print('Slow down piggy, leave some for the rest of us')
+
+if number > 20:
+    print(str(number) + '! Are you training for an eating contest?')
+
+
+
+# add contingencies for string responses
