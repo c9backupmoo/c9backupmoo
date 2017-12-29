@@ -1,0 +1,7 @@
+
+output=print('')
+for item in output:
+        print(item[0].upper() + item[1:], end='. ')
+
+print("all the cats are brown. don't think too much about it.")
+
