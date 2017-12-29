@@ -1,12 +1,9 @@
 import random
 
 number=random.randint(1,10)
-
 print('I am thinking of a number between 1 and 10. Take a guess.')
 
-joke_told = True
-if not joke_told:
-    print("Too low again, bro")
+joke_told=False
 
 for guessesTaken in range(1,10):
     try:
@@ -16,9 +13,12 @@ for guessesTaken in range(1,10):
             print('Too high, bro. Try again.')
             continue
 
-
         if (guess < number) and (guess < 4):
-            print("I wasn't asking for your penis size, Dude. Try again.")
+            if joke_told == False:
+                print("I wasn't asking for your penis size.")
+                joke_told = True
+            else:
+                print("Still too low, bro. Guess again.")
             continue
 
         if guess < number:
