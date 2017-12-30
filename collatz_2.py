@@ -1,7 +1,6 @@
-number=int(input())
 print('input a number greater than 1')
 
-def collatz():
+def collatz(number):
 
         if number %2==0:
             print(number //2)
@@ -11,15 +10,23 @@ def collatz():
             print(3* number + 1)
             return 3* number + 1
 
+x=int(input())
+
+
 while True:
-    collatz(number)
+    try:
+        collatz(x)
 
-    if number == 1:
-        print('answer is 1')
-        break
+        x=collatz(x)
 
+        if x == 1:
+            print('answer is ' + str(x))
+            break
 
+    except ValueError:
+        print('please type a number')
 
+#can't except without breaking program
 
 
 
