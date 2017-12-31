@@ -1,4 +1,5 @@
 #change to include proper cases for punctuation.
+#assess the string inputs ie. the number of characters, the use of 'and'. then adjust the responses accordingly
 
 print('Did you eat lunch today?')
 
