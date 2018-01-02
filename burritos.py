@@ -9,10 +9,10 @@ yesList=['y','yes', 'yeah' , 'ya', 'yup', 'yes i did']
 noList=['n', 'no', 'naw', 'nah', 'nope', "no i didn't", 'no i did not']
 
 
-if response in yesList: #change to accept multiple versions of response
+if response in yesList:
     print('What did you eat for lunch?')
 if response in noList:
-    print('What you you like to eat?')
+    print('What would you like to eat?')
 
 foods=input()
 suffix='s'
