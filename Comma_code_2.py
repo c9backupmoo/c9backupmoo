@@ -1,4 +1,4 @@
 spam = ['apples', 'bananas', 'tofu', 'cat']
 
-for i in range(4):
-    print(str(i))
+for i in spam[0:-1]:
+    print(str(i)[:3] + ', ')
