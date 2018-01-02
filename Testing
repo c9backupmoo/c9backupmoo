@@ -1,0 +1,5 @@
+spam=['apples', 'bananas', 'tofu', 'cats']
+
+s=""
+
+print(s)
