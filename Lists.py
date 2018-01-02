@@ -4,13 +4,13 @@ r =input().lower()
 yesList=['y','yes']
 noList=['n','no']
 
-for r in yesList:
+if r in yesList:
     print('What would you like to call your list?')
-name=input()
-newList=name
-print('Input your list items for ' + newList.upper())
+    name=input()
+    newList=name
+    print('Input your list items for ' + newList.upper())
 
-for r in noList:
+if r in noList:
     print('Would you like to add to an existing list?')
 
     #if r in yesList:
