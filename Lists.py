@@ -4,17 +4,20 @@ def start():
     r =input().lower()
     yesList=['y','yes']
     noList=['n','no']
+    masterList=[]
 
     if r in yesList:
         print('What would you like to call your list?')
+        #create a 'master list' where all lists are stored and can be called
         name=input()
         newList=name
         print('Input your list items for ' + newList.upper())
+        masterList.append(newList)
         newList=[]
         add=input()
         newList.append(add) # is not adding to the list
-        for item in newList[:-1]:
-            print(newList(item))
+        for item in newList:
+            print(item)
 
     if r in noList:
         print('Would you like to add to an existing list?')
