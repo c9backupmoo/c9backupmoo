@@ -10,10 +10,10 @@ def start():
         print('What would you like to call your list?')
         #create a 'master list' where all lists are stored and can be called
         name=input()
-        newList=name
-        print('Input your list items for ' + newList.upper())
-        masterList.append(newList)
+        print('Input your list items for ' + name.upper())
         newList=[]
+        masterList.append(name)
+        masterList.append(newList)
         add=input()
         newList.append(add) # is not adding to the list
         for item in newList:

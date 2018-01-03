@@ -1,6 +1,7 @@
 spam=['apples', 'bananas', 'tofu', 'cats']
 
-s = "" #assigns s as a string?
+#s = "" #assigns s as a string?
+
 for item in spam[0:-1]:
     s = s + item + ', ' #turns items from list into string and adds a comma
 
