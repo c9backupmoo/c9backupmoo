@@ -1,6 +1,6 @@
 spam=['apples', 'bananas', 'tofu', 'cats']
 
-s=""
+s=" "
 
 for item in spam[0:-1]:
     s= s + item

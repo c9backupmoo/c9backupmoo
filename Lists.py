@@ -1,3 +1,10 @@
+#for the first input - if other than yes or no, search database for input
+#if input is not found - restate th question, maybe specify 'yes' or 'no'
+#program will end if a space is used while inputting list items - fix this
+#user should also be able to use the enter key during this process without ending the program
+#maybe use a different key (other than enter) to indicate the end of a list
+
+
 def start():
     print('Would you like to make a list?')
 
