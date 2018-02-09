@@ -1,3 +1,2 @@
-spam = {'colour':'red', 'age': 42}
-for v in spam.values():
-    print(v)
+spam = {'name': 'zophie', 'age': 7}
+'name' in spam
