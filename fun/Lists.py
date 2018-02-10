@@ -1,5 +1,9 @@
 #for the first input - if other than yes or no, search database for input
-#if input is not found - restate th question, maybe specify 'yes' or 'no'
+        #if input is not found - restate the question, maybe specify 'yes' or 'no'
+#when user wants to start a list, check for an existing list with that name
+        #if list name exists - 'there is already a list by that name, would you like to edit this list?'
+                #if answer is no - 'please choose another name for your list'
+                        #create a way to edit list  names
 #program will end if a space is used while inputting list items - fix this
 #user should also be able to use the enter key during this process without ending the program
         #maybe use a different key (other than enter) to indicate the end of a list
@@ -9,6 +13,9 @@
                     #if no such word is found - ask if they would like to make a new list for 'apples'
                             #this will require a try except
 #create a way for the user to go back
+#create nested list and dictionaries ie.
+        #'recipes'- 'deserts' - 'brownies'
+                            # - 'pumpkin cupcakes'
 
 
 def start():
